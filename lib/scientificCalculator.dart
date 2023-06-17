@@ -29,7 +29,7 @@ class _ScientificCalculatorState extends State<ScientificCalculator> {
 
   void initialise() {}
 
-  void _onPressed({String buttonText}) {
+  void _onPressed({String buttonText = ""}) {
     switch (buttonText) {
       case EXCHANGE_CALCULATOR:
         setState(() {
@@ -242,7 +242,7 @@ class _ScientificCalculatorState extends State<ScientificCalculator> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Calculator'),
+        title: Text('Scientific Calculator'),
         centerTitle: true,
         elevation: 0.0,
       ),
@@ -263,7 +263,8 @@ class _ScientificCalculatorState extends State<ScientificCalculator> {
                               ? _inOutExpression(operators, equationFontSize)
                               : Container(),
                           secondOperand != ''
-                              ? _inOutExpression(secondOperand, equationFontSize)
+                              ? _inOutExpression(
+                                  secondOperand, equationFontSize)
                               : Container(),
                           result != ''
                               ? _inOutExpression(result, resultFontSize)

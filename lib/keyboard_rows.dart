@@ -2,10 +2,10 @@ import 'keyboard_buttons.dart';
 import 'package:flutter/material.dart';
 
 class KeyboardRows extends StatelessWidget {
-  KeyboardRows({@required this.rowsButtons, this.onTap});
+  KeyboardRows({required this.rowsButtons, this.onTap});
 
   final List<String> rowsButtons;
-  final CallbackButtonTap onTap;
+  final onTap;
 
   @override
   Widget build(BuildContext context) {

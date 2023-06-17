@@ -11,10 +11,9 @@ class MyApp extends StatelessWidget {
       title: 'Scientific Calculator',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
       home: ScientificCalculator(),
     );
   }
 }
-
